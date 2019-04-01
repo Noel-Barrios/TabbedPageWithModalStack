@@ -9,6 +9,9 @@
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <Button Text="Xamarin" Command="{Binding OpenWebCommand}"></Button>
+        <!--<Button Text="Xamarin" Command="{Binding OpenWebCommand}"></Button>-->
+        
+        
+        <Button Text="Start Modal Stack" Clicked="OnStartClicked"></Button>
     </ContentPage.Content>
 </ContentPage>

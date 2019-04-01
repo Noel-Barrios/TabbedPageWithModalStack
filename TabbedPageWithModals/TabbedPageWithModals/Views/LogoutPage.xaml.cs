@@ -11,5 +11,16 @@ namespace TabbedPageWithModals.Views
         {
             InitializeComponent();
         }
+
+        async void OnStartClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new ModalPage());
+
+            Device.StartTimer(TimeSpan.FromSeconds(2), () =>
+            {
+                Navigation.PopModalAsync();
+                return true;
+            });
+        }
     }
 }
